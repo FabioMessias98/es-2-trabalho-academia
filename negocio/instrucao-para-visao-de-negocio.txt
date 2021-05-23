@@ -1,0 +1,3 @@
+ negocio
+   Nesta pasta, o grupo deverá gravar o (1) Documento de Visão de Negócio (visao_negocio.doc). As imagens deverão ser colocadas dentro do documento e também disponibilizadas no formato de arquivo PNG (em boa resolução) ou PDF;
+   Ainda, esta pasta deverá conter o (2) Documento de Regras de Negócio (regras_negocio.doc) e o (3) Glossário de Negócio (glossario_negocio.doc).
