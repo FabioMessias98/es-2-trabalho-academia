@@ -1,0 +1,2 @@
+[] implementacao
+   Nesta pasta, o grupo deverá disponibilizar o código-fonte implementado dos 3 casos de uso (os mesmos documentados). Deve também existir um arquivo README.md com instruções sobre como executar o código

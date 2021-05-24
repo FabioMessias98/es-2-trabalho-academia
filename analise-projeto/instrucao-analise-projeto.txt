@@ -1,0 +1,2 @@
+nalise-projeto
+   Nesta pasta, o grupo deverá gravar o (1) Documento de Arquitetura de Software com a visão de casos de uso e lógica (diagrama de classes e diagrama de sequência). Caso possível, o grupo pode preencher algumas outras partes.
