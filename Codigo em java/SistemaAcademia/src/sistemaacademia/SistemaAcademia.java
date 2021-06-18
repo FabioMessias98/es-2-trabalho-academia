@@ -32,11 +32,13 @@ public class SistemaAcademia {
         int opcao; 
         //SistemaAcademico sa = new SistemaAcademico(10, 10); 
         Aluno aluno; 
-        Funcionario funcionario;  
+        Funcionario funcionario; 
+        Evento evento = null; 
         LinkedList ll = new LinkedList();
         Iterator ill; 
         ArrayList<Aluno> al = new ArrayList(); 
         ArrayList<Funcionario> fc = new ArrayList(); 
+        ArrayList <Evento> ev = new ArrayList(); 
         
  
          do{
@@ -49,7 +51,9 @@ public class SistemaAcademia {
                 + "\n 6- Alterar Professor"
                 + "\n 7- Pesquisar Aluno"
                 + "\n 8- Pesquisar Professor"
-                + "\n 9- Sair");
+                + "\n 9- Cadastrar evento"
+                + "\n 10- Exibir evento"
+                + "\n 11- Sair");
          opcao = Integer.parseInt(frase);
         
        
@@ -59,8 +63,7 @@ public class SistemaAcademia {
             rg =  JOptionPane.showInputDialog("Digite o Registro do Aluno: "); 
                      
             nome =  JOptionPane.showInputDialog("Digite o Nome do Aluno: "); 
-                      
-                        
+                         
             ender =  JOptionPane.showInputDialog("Digite o Endereço do Aluno: "); 
            
             tel =  JOptionPane.showInputDialog("Digite o Telefone do Aluno: "); 
@@ -158,9 +161,28 @@ public class SistemaAcademia {
                  } 
                 }
                 break; 
- 
-        }
-        }while(opcao!=9);
+            case 9: // Agendar evento
+                
+                String dsc, dt; 
+             dt =  JOptionPane.showInputDialog("Digite a data do evento: "); 
+             dsc = JOptionPane.showInputDialog("Digite a descrição do evento: ");
+             
+             evento = new Evento(); 
+             evento.setData(dt);
+             evento.setDescrição(dsc);
+             ev.add(evento);
+             
+             break; 
+             
+            case 10: // exibir evento 
+                for(int i =0; i < ev.size(); i++){
+                    evento = (Evento)ev.get(i); 
+                      System.out.println("No dia " + evento.getData()+" " + evento.getDescrição()); 
+                  }
+               break; 
+             
+             }
+        }while(opcao!=11);
         
         
        
